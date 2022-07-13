@@ -1,0 +1,20 @@
+
+
+
+<div>
+<a routerLink="/icici"><img id="logo" src="https://www.lawctopus.com/wp-content/uploads/2014/09/icici-bank.png"></a>
+</div>
+
+<div>
+    <h3>Welcome to ICICI Bank</h3>
+    <p>Hi {{userName}}  having UserId {{userId}}</p>
+</div>
+
+<div> Accounts </div>
+<select>
+    <option>Current</option>
+    <option>Savings</option>
+</select>
+
+<button (click)="dashboard()">Dashboard</button>
+<router-outlet></router-outlet>

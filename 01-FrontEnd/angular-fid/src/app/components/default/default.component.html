@@ -1,0 +1,40 @@
+
+<!doctype html>
+    <form [formGroup]="defaultFormGroup" (ngSubmit)="submit()">
+        <div class="danger">{{errMsg}}</div>
+        <!--UserForm Group-->
+        <div formGroupName="userDetails">
+            <div>
+                <div><label>Username</label></div>
+                <input formControlName="userName" type="text" />
+            </div>
+
+            <div>
+                <div><label>Password</label></div>
+                <input formControlName="password" type="password"/>
+            </div>
+
+            <div>
+                <div><label>UserId</label></div>
+                <input formControlName="userId" type="text" />
+            </div>
+
+        </div>
+
+         <!--FI details-->
+        <!-- <div formGroupName="FIDetails">
+            <div>
+                <div><label>FIID</label></div>
+                <input formControlName="FIID" #id type="text" [(ngModel)]="user.fiid" />
+            </div>         
+        </div> -->
+        <!-- <button (click)="getValue(id.value)" type="submit">Submit</button> -->
+        <button type="submit" hidden #btn ></button>
+
+        
+    </form>
+    
+    <button (click)="btn.click()">Submit</button>
+
+    
+   

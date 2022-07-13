@@ -1,0 +1,22 @@
+<div>
+    <a routerLink="/hdfc"><img id="logo" src="https://logos-world.net/wp-content/uploads/2020/11/HDFC-Bank-Logo.png"></a>
+    </div>
+    
+<div>
+    <h3>Welcome to HDFC Bank</h3>
+    <p>Hi {{Name}} having UserId {{Id}}</p>
+</div>
+
+<div> Accounts </div>
+<select>
+    <option>Current</option>
+    <option>Savings</option>
+</select>
+
+<button (click)="dashboard()">Dashboard</button>
+<router-outlet></router-outlet>
+
+
+
+
+
